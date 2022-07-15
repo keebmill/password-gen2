@@ -16,14 +16,14 @@
 
         <div class="generator-box">
             <div class="generator-header">
-                <h2> Generate A Password</h2>
+                <h2> Generate a Password</h2>
             </div>
     
             <div>
                 <textarea 
                     readonly
                     id="password"
-                    placeholder="Your Secuure Password"
+                    placeholder="Your Secure Password"
                     aria-label="generated password"
                 ></textarea>
             </div>
@@ -37,7 +37,29 @@
         <div class="settings">
             <div class="setting">
                 <label> Password Length</label>
+                <input type="number" id="length" min="8" max="128" value="8"/>
             </div>
+
+            <div class="setting">
+                <label> include uppercase letters</label>
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+
+            <div class="setting">
+                <label> Include lowercase letters</label>
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+
+            <div class="setting">
+                <label> include numbers</label>
+                <input type="checkbox" id="numbers" checked />
+            </div>
+
+            <div class="setting">
+                <label> include symbols </label>
+                <input type="checkbox" id="symbols" checked />
+            </div>
+
         </div>
 
 
